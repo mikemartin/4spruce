@@ -26,14 +26,14 @@
         
   </head>
   <body>
-       
-    {% include header.html %}
+    <div class="container">
+      {% include header.html %}
 
-    {{ content }}
-
+      {{ content }}
+    </div>
+      
     {% include footer.html %}
-        
-    {% include js.html %}
 
+    {% include js.html %}
   </body>
 </html>

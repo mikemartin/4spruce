@@ -30,13 +30,15 @@
     </title>
 
     <link rel="stylesheet" href="4spruce.css">
+    <link href="vendor/photoswipe.css" rel="stylesheet" />
+    <link href="vendor/default-skin/default-skin.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,900|Playfair+Display">
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
         
   </head>
   <body>
-    <div class="container">
+    <div class="container gallery">
       {% include header.html %}
 
       {{ content }}
@@ -45,5 +47,6 @@
     {% include footer.html %}
 
     {% include js.html %}
+    {% include photoswipe.html %}
   </body>
 </html>

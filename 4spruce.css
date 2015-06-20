@@ -188,9 +188,21 @@ blockquote:last-child{
 }
 
 .photo {
+  position: relative;
   padding: 0;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
+}
+
+.photo .pswp__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.photo:hover .pswp__button {
+  display: block;
 }
 
 .photo figure { display: none; }
@@ -207,12 +219,8 @@ blockquote:last-child{
   overflow: hidden;
 }
 
-.masthead-photo img {
-  margin-top: -2rem; 
-}
-
 .masthead-wrapper {
-  background: rgba(34, 34, 34, 0.25);
+  background: rgba(34, 34, 34, 0.15);
   top: 0;
   right: 0;
   bottom: 0;
@@ -514,6 +522,13 @@ a.demo-gallery__img--main {
   a.demo-gallery__img--main {
     width: 127px;
   }
+  
+  .photo .pswp__button {
+    display: block;
+    left: 0;
+    right: auto;
+  }
+  
 }
 
 
